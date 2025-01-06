@@ -90,11 +90,11 @@ console.log("A");
 
 import pageData from './ScenePages.json' assert { type: 'json' };
 
-console.log(pageData);
-
-for (var htmlElement in pageData["Objects"]) 
+for (var i = 0; i < pageData["Objects"].length; i++) 
 {
-  console.log(htmlElement.name);
+  var htmlElement = sceneData["Objects"][i];
+
+  console.log(htmlElement["name"]);
   cssElement = new CSS3DObject(document.getElementById(htmlElement["elementName"]));
 
   console.log(htmlElement["elementName"]);
