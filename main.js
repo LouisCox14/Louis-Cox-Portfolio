@@ -86,10 +86,15 @@ window.addEventListener('objectLoaded', (e) => {
 
 // HTML ELEMENTS
 
+console.log("A");
+
 import pageData from './ScenePages.json' assert { type: 'json' };
+
+console.log("B");
 
 for (var htmlElement in pageData["Objects"]) 
 {
+  console.log("C");
   cssElement = new CSS3DObject(document.getElementById(htmlElement["elementName"]));
 
   console.log(htmlElement["elementName"]);
