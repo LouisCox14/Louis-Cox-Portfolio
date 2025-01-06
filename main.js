@@ -92,6 +92,8 @@ for (var htmlElement in pageData["Objects"])
 {
   cssElement = new CSS3DObject(document.getElementById(htmlElement["elementName"]));
 
+  console.log(htmlElement["elementName"]);
+
   cssElement.name = htmlElement["name"];
 
   elementPos = htmlElement["startPos"];
