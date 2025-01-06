@@ -90,7 +90,7 @@ console.log("A");
 
 import pageData from './ScenePages.json' assert { type: 'json' };
 
-console.log("B");
+console.log(pageData);
 
 for (var htmlElement in pageData["Objects"]) 
 {
