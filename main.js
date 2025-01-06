@@ -87,7 +87,6 @@ window.addEventListener('objectLoaded', (e) => {
 // HTML ELEMENTS
 
 import pageData from './ScenePages.json' assert { type: 'json' };
-var htmlElements = {};
 
 for (var htmlElement in pageData["Objects"]) 
 {
@@ -98,7 +97,7 @@ for (var htmlElement in pageData["Objects"])
   elementPos = htmlElement["startPos"];
   cssElement.position.set(elementPos.x, elementPos.y, elementPos.z);
 
-  elementRot = htmlElement["startPos"];
+  elementRot = htmlElement["startRot"];
   cssElement.rotation.set(degToRad(elementRot.x), degToRad(elementRot.y), degToRad(elementRot.z));
   
   htmlScene.add(cssElement);
