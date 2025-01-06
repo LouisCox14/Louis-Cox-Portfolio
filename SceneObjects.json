@@ -1,0 +1,10 @@
+{
+    "Objects" : [
+        {
+            "name" : "Scene",
+            "fileName" : "scene.gltf",
+            "startPos" : { "x" : 0, "y" : 0, "z" : 0 },
+            "startRot" : { "x" : 0, "y" : 0, "z" : 180 }
+        }
+    ]
+}
