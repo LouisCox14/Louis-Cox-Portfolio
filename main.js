@@ -1,5 +1,5 @@
 import './style.css'
-import * as THREE from 'three.js';
+import * as THREE from 'three';
 import { GLTFLoader } from "./node_modules/three/examples/jsm/loaders/GLTFloader.js";
 import { CSS3DRenderer, CSS3DObject } from "./node_modules/three/examples/jsm/renderers/CSS3DRenderer.js";
 
