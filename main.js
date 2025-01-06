@@ -86,29 +86,10 @@ window.addEventListener('objectLoaded', (e) => {
 
 // HTML ELEMENTS
 
-console.log("A");
-
-import pageData from './ScenePages.json' assert { type: 'json' };
-
-for (var i = 0; i < pageData["Objects"].length; i++) 
-{
-  var htmlElement = sceneData["Objects"][i];
-
-  console.log(htmlElement["name"]);
-  cssElement = new CSS3DObject(document.getElementById(htmlElement["elementName"]));
-
-  console.log(htmlElement["elementName"]);
-
-  cssElement.name = htmlElement["name"];
-
-  elementPos = htmlElement["startPos"];
-  cssElement.position.set(elementPos.x, elementPos.y, elementPos.z);
-
-  elementRot = htmlElement["startRot"];
-  cssElement.rotation.set(degToRad(elementRot.x), degToRad(elementRot.y), degToRad(elementRot.z));
-  
-  htmlScene.add(cssElement);
-}
+var cssElement = new CSS3DObject(document.getElementById("charSheet"));
+cssElement.position.set(100000000, 0, -650);
+cssElement.rotation.set(degToRad(90), degToRad(180), 0);
+htmlScene.add(cssElement);
 
 // LIGHTS
 
