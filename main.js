@@ -94,7 +94,7 @@ console.log("B");
 
 for (var htmlElement in pageData["Objects"]) 
 {
-  console.log("C");
+  console.log(htmlElement);
   cssElement = new CSS3DObject(document.getElementById(htmlElement["elementName"]));
 
   console.log(htmlElement["elementName"]);
